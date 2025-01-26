@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class AnswerButton extends StatelessWidget {
-  const AnswerButton(
-      {super.key, required this.answerText, required this.onTap});
+  const AnswerButton({super.key, required this.answerText, required this.onTap});
+
   final String answerText;
   final void Function() onTap;
+
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -16,7 +17,11 @@ class AnswerButton extends StatelessWidget {
         ),
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
       ),
-      child: Text(answerText, textAlign: TextAlign.center,),
+      onPressed: onTap, // Corrected missing onTap call
+      child: Text(
+        answerText,
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }
