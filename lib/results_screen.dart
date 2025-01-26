@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/data/questions.dart';
-import 'package:quizapp/questions_summary.dart';
+import 'package:quizzy/data/questions.dart'; // Changed from quizapp to quizzy
+import 'package:quizzy/questions_summary.dart'; // Changed from quizapp to quizzy
+
 
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen({super.key, required this.chosenAnswers});

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/start_screen.dart';
-import 'package:quizapp/question_screen.dart';
-import 'package:quizapp/data/questions.dart';
-import 'package:quizapp/results_screen.dart';
+import 'package:quizzy/start_screen.dart'; // Changed from quizapp to quizzy
+import 'package:quizzy/question_screen.dart'; // Changed from quizapp to quizzy
+import 'package:quizzy/data/questions.dart'; // Changed from quizapp to quizzy
+import 'package:quizzy/results_screen.dart'; // Changed from quizapp to quizzy
+
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});

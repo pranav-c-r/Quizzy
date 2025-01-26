@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/answer_button.dart';
-import 'package:quizapp/data/questions.dart';
+import 'package:quizzy/answer_button.dart'; // Changed from quizapp to quizzy
+import 'package:quizzy/data/questions.dart'; // Changed from quizapp to quizzy
 import 'package:google_fonts/google_fonts.dart';
+
 
 class QuestionScreen extends StatefulWidget {
   const QuestionScreen({super.key, required this.onSelectAnswer});
@@ -54,7 +55,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   answerQuestion(answer);
                 },
               );
-            }).toList(),
+            }),
           ],
         ),
       ),
